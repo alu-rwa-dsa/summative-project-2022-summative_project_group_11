@@ -7,10 +7,6 @@ height = 1000
 root = Tk()
 canvas = Canvas(root, width=width, height=height, bg="green")
 canvas.pack()
-photo = PhotoImage(file="images/2_of_clubs.png")
-photo1 = PhotoImage(file="images/2_of_hearts.png")
-photo_width = photo.width()
-photo_height = photo.height()
 
 
 def resize_image(card):
@@ -24,7 +20,8 @@ def resize_image(card):
 
 x_coords = 0
 y_coords = 10
-suits = ["diamonds", "clubs", "hearts", "spades"]
+# suits = ["diamonds", "clubs", "hearts", "spades"]
+suits = [1, 2, 3, 4]
 values = range(2, 15)
 deck = []
 for suit in suits:

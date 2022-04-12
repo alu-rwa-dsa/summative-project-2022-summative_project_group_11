@@ -2,12 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fab3affb-f554-47ea-8ff8-be711383c1f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/summative-project-2022-summative_project_group_11.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/summative-project-2022-summative_project_group_11.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/animation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/11_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/11_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/11_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/11_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/13_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/13_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/13_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/13_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/14_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/14_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/14_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/14_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8_of_spades.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9_of_clubs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9_of_diamonds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9_of_hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9_of_spades.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +66,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27f7G3qUs2FewTU08NUNaVsGrfl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,6 +79,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="animation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
