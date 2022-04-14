@@ -2,7 +2,7 @@ import random
 from tkinter import *
 import time
 from PIL import Image, ImageTk
-
+import pythonds
 from pythonds.basic.queue import Queue
 import math
 
