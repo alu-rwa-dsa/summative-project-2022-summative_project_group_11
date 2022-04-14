@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>src.module &#8212; Radix sorting machine with card animation 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nature.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Radix sorting machine with card animation 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">src.module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for src.module</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Radix sorting with card deck animations</span>
+<span class="sd">------------------------------------------</span>
+
+
+<span class="sd">This is a module that has the methods used  in our program</span>
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+
+
+
+
+<div class="viewcode-block" id="radix_sort"><a class="viewcode-back" href="../../module.html#src.module.radix_sort">[docs]</a><span class="k">def</span> <span class="nf">radix_sort</span><span class="p">(</span><span class="n">num_list</span><span class="p">,</span> <span class="n">redix</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A method that performs the radix sort</span>
+
+<span class="sd">    :param num_list: list</span>
+
+<span class="sd">    :return:queue</span>
+<span class="sd">    &quot;&quot;&quot;</span></div>
+    <span class="c1"># main_bin = Queue()</span>
+    <span class="c1"># bins = {}</span>
+    <span class="c1"># for i in range(redix):</span>
+    <span class="c1">#     bins[i] = Queue()</span>
+    <span class="c1">#</span>
+    <span class="c1"># for num in num_list:</span>
+    <span class="c1">#     main_bin.enqueue(num)</span>
+    <span class="c1">#</span>
+    <span class="c1"># n_digit = math.ceil(math.log(max(num_list), redix))</span>
+    <span class="c1"># index = 0</span>
+    <span class="c1"># # x = [30, 160, 290, 420, 550, 680, 810, 940, 1070, 1200]</span>
+    <span class="c1"># # x=160</span>
+    <span class="c1"># y = 600</span>
+    <span class="c1"># # y1 = 500</span>
+    <span class="c1"># for k in range(1, n_digit + 1):</span>
+    <span class="c1">#     while not main_bin.isEmpty():</span>
+    <span class="c1">#         item = main_bin.dequeue()</span>
+    <span class="c1">#         moved_index = num_list.index(item)</span>
+    <span class="c1">#         # gain the kth digit of item.</span>
+    <span class="c1">#         digit = item % redix ** k // redix ** (k - 1)</span>
+    <span class="c1">#         # print(digit)</span>
+    <span class="c1">#</span>
+    <span class="c1">#         bins[digit].enqueue(item)</span>
+    <span class="c1">#</span>
+    <span class="c1">#         if digit == 0:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 0, y)</span>
+    <span class="c1">#         if digit == 1:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 130, y)</span>
+    <span class="c1">#         if digit == 2:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 260, y)</span>
+    <span class="c1">#         if digit == 3:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 390, y)</span>
+    <span class="c1">#         if digit == 4:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 520, y)</span>
+    <span class="c1">#         if digit == 5:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 650, y)</span>
+    <span class="c1">#         if digit == 6:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 780, y)</span>
+    <span class="c1">#         if digit == 7:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 910, y)</span>
+    <span class="c1">#         if digit == 8:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 1040, y)</span>
+    <span class="c1">#         if digit == 9:</span>
+    <span class="c1">#             canvas.move(displayed_cards[moved_index], 1170, y)</span>
+    <span class="c1">#         time.sleep(0.1)</span>
+    <span class="c1">#         root.update()</span>
+    <span class="c1">#         # y -= 5</span>
+    <span class="c1">#         # x -= 70</span>
+    <span class="c1">#         index += 1</span>
+    <span class="c1">#</span>
+    <span class="c1">#     for j in range(10):</span>
+    <span class="c1">#         while not bins[j].isEmpty():</span>
+    <span class="c1">#             item1 = bins[j].dequeue()</span>
+    <span class="c1">#             main_bin.enqueue(item1)</span>
+    <span class="c1">#             moved_index1 = num_list.index(item1)</span>
+    <span class="c1">#             if j == 0:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], 0, -y)</span>
+    <span class="c1">#             elif j == 1:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -130, -y)</span>
+    <span class="c1">#             elif j == 2:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -260, -y)</span>
+    <span class="c1">#             if j == 3:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -390, -y)</span>
+    <span class="c1">#             if j == 4:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -520, -y)</span>
+    <span class="c1">#             if j == 5:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -650, -y)</span>
+    <span class="c1">#             if j == 6:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -780, -y)</span>
+    <span class="c1">#             if j == 7:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -910, -y)</span>
+    <span class="c1">#             if j == 8:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -1040, -y)</span>
+    <span class="c1">#             if j == 9:</span>
+    <span class="c1">#                 canvas.move(displayed_cards[moved_index1], -1170, -y)</span>
+    <span class="c1">#             time.sleep(0.1)</span>
+    <span class="c1">#             root.update()</span>
+    <span class="c1">#</span>
+    <span class="c1"># return main_bin</span>
+
+<div class="viewcode-block" id="resize_image"><a class="viewcode-back" href="../../module.html#src.module.resize_image">[docs]</a><span class="k">def</span> <span class="nf">resize_image</span><span class="p">(</span><span class="n">card</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     A method to resize images used to visualize the cards</span>
+
+<span class="sd">     :param card: .png</span>
+
+<span class="sd">     :return:.png</span>
+<span class="sd">     &quot;&quot;&quot;</span></div>
+    <span class="c1"># open_image = Image.open(card)</span>
+    <span class="c1"># # resize our image</span>
+    <span class="c1"># resize_image = open_image.resize((50, 60))</span>
+    <span class="c1">#</span>
+    <span class="c1"># our_card_image = ImageTk.PhotoImage(resize_image)</span>
+    <span class="c1"># return our_card_image</span>
+
+<div class="viewcode-block" id="cards"><a class="viewcode-back" href="../../module.html#src.module.cards">[docs]</a><span class="k">def</span> <span class="nf">cards</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A method to access images and call resize method</span>
+
+<span class="sd">    :return: none</span>
+<span class="sd">    &quot;&quot;&quot;</span></div>
+    <span class="c1"># suits = [1, 2, 3, 4]</span>
+    <span class="c1"># values = range(1, 14)</span>
+    <span class="c1"># global deck</span>
+    <span class="c1"># deck = []</span>
+    <span class="c1"># for suit in suits:</span>
+    <span class="c1">#     for value in values:</span>
+    <span class="c1">#         deck.append(f&quot;{value}{suit}&quot;)</span>
+    <span class="c1">#</span>
+    <span class="c1"># for j in deck:</span>
+    <span class="c1">#     upload = resize_image(f&quot;images/{j}.png&quot;)</span>
+    <span class="c1">#     allCards[j] = upload</span>
+
+<div class="viewcode-block" id="open_cards"><a class="viewcode-back" href="../../module.html#src.module.open_cards">[docs]</a><span class="k">def</span> <span class="nf">open_cards</span><span class="p">(</span><span class="n">list_cards</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A method to create the cards</span>
+
+<span class="sd">    :param list_cards: dictionary</span>
+
+<span class="sd">    :return: none</span>
+<span class="sd">    &quot;&quot;&quot;</span></div>
+
+    <span class="c1"># counter = 1</span>
+    <span class="c1"># x = 30</span>
+    <span class="c1"># y = 20</span>
+    <span class="c1"># for key in keys:</span>
+    <span class="c1">#     # if counter % 13 == 1 and counter != 1:</span>
+    <span class="c1">#     #     # y += 80</span>
+    <span class="c1">#     #     x = 30</span>
+    <span class="c1">#     img = canvas.create_image(x, y, image=allCards[key], anchor=NW)</span>
+    <span class="c1">#     displayed_cards.append(img)</span>
+    <span class="c1">#     # x += 10</span>
+    <span class="c1">#     counter += 1</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Radix sorting machine with card animation 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">src.module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Group 11.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>
