@@ -3,9 +3,13 @@
 ## Names of Contributors:
 
 Adrine UWERA
+
 Melissa GIRAMATA
+
 Gabin ISHIMWE
+
 Jessie UMUHIRE UMUTESI
+
 Evelyne UMUBYEYI
 
 ## Project description
