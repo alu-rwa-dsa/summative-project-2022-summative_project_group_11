@@ -16,17 +16,29 @@ In this project, we have implemented the radix sorting algorithm, which is a non
 We assigned a number value to each card where the last digit represents the suit number given that 1 represents clubs, 2 spades, 3 hearts, and 4 diamonds. The digits before the last one represent the card in this manner:
 
 1 represents an Ace
+
 2 represents 2
+
 3 represents 3
+
 4 represents 4
+
 5 represents 5
+
 6 represents 6
+
 7 represents 7
+
 8 represents 8
+
 9 represents 9
+
 10 represents 10
+
 11 represents a Queen 
+
 12 represents a Jack 
+
 13 represents a King.
 
 So a number like 11 would represent an Ace of clubs, 94 would represent a 9 of diamonds, 123 would represent a jack of hearts, and so on. We will use these assigned values to sort cards as if we were sorting a list of numbers and the program sorts in ascending order.  
