@@ -1,6 +1,6 @@
-#Project Name: Radix Sort Machine
+# Project Name: Radix Sort Machine
 
-##Names of Contributors:
+## Names of Contributors:
 
 Adrine UWERA
 Melissa GIRAMATA
@@ -8,7 +8,7 @@ Gabin ISHIMWE
 Jessie UMUHIRE UMUTESI
 Evelyne UMUBYEYI
 
-##Project description
+## Project description
 Sorting algorithms are categorized into comparison-based sorting algorithms and non-comparison-based sorting algorithms.  While comparison-based sorting algorithms are very reliable as they can be used to sort any object since they provide a comparator to define the order, they are slower for sorting large lists, as they have to compare individual elements of the list to come up with a sorted list. For this reason, there is a need for non-comparison-based sorting techniques with a better time-complexity of O(n) compared to comparison-based sorting algorithms with a lower limit of O(n log(n)).
 
 In this project, we have implemented the radix sorting algorithm, which is a non-comparison-based sorting algorithm for sorting a deck of shuffled playing cards with some animations to help the user understand the technique works in a more engaging way. Radix sort sorts the elements by first grouping the individual digits of the same place value. Then, sort the elements according to their increasing/decreasing order.
@@ -33,7 +33,7 @@ So a number like 11 would represent an Ace of clubs, 94 would represent a 9 of d
 
 This program visualizes how the cards are sorted step by step, by showing how they are moved from the main bin and assigned into bins labelled from 0 to 9 according to the digit they have in a certain place value, and then back to the main bin until they are completely sorted. After the first round of sorting, cards should be sorted according to their suits since the last digit in the cards’ representative number represents their suit clubs should come first, spades second, hearts third, and diamonds last. After the final round of sorting, each column will have four similar cards i.e: the first column will be of aces, the second of  2s, the third of 3s…, and the last will be of Kings.  Each row will also represent a certain suit the first will be of clubs, spades second, hearts third and diamonds last.
 
-##Python Libraries used
+## Python Libraries used:
 
 We have used six(6) python libraries in this project. They are as follows:
 
@@ -57,7 +57,7 @@ Sphinx: Follow the steps [here](https://www.sphinx-doc.org/en/master/usage/insta
 
 
 
-##How to run the program:
+## How to run the program:
 To use this project, you have to clone it into your local machine and run it in your favourite IDE or text editor.
   
 In Pycharm, all one needs to do is to click the play button or right-click and run the program. 
