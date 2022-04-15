@@ -114,3 +114,25 @@ In Pycharm, all one needs to do is to click the play button or right-click and r
 
 
 In other Python IDEs, one just runs the program as usual and is able to visualize the algorithm in action.
+
+
+
+## Space and Time complexity
+
+# Space:
+
+In this program, we have about 11 Queues,  with a space complexity of O(n*11), we have 1 dictionary with O(n) space complexity,  7 lists with a space complexity of O(n*7), 13 variables with space complexity of O(13), 10 for loops O(11) and 3 while loop with O(3).
+
+O(11n) + O(n) +O(7n)+O(13) + O(11)+O(3)
+=O(45n)
+
+===O(n) space complexity.
+
+# Time:
+
+In this program, we have about 11 Queues,  with a time complexity of O(11n) in terms of enqueue and deque, we have 1 dictionary with O(1) time complexity in terms of accessing,  7 lists with time complexity of O(7),  6 for loops with O(6n), two nested loops with O(2n^2) and 1 while loop with O(n).
+
+O(11n) + O(1)+O(7)+O(6n)+O(2n^2)+O(n)
+= O(17n)+O(2n^2)+O(8)
+=== O(n^2)  time complexity.
+
