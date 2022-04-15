@@ -14,5 +14,4 @@ setup(
     install_requires=['tkinter, PIL, Queue'],
     packages=find_packages(),
 
-
 )

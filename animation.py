@@ -3,7 +3,7 @@ from tkinter import *
 import time
 from PIL import Image, ImageTk
 import pythonds
-from pythonds.basic.queue import Queue
+from queue import Queue
 import math
 
 # a list to hold the cards to be removed from the screen
