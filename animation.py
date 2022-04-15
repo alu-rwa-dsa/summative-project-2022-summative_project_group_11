@@ -8,13 +8,8 @@ import math
 
 # a list to hold the cards to be removed from the screen
 
-<<<<<<< HEAD
-=======
-delete_img = []
-
 
 # a method to iterate through the list of cards image and create the images for every sorting stage
->>>>>>> 2529ce03c77460f7de51d7e47e15b6023de156e3
 def iteration_cards(cards):
     delete_img = []
     counter = 1
@@ -82,11 +77,9 @@ def radix_sort(num_list, redix=10):
             index += 1
 
         display_iteration = []
-<<<<<<< HEAD
 
-=======
         # displaying the cards after each radix-sorting phase
->>>>>>> 2529ce03c77460f7de51d7e47e15b6023de156e3
+
         for j in range(10):
             while not bins[j].isEmpty():
                 item1 = bins[j].dequeue()
@@ -148,12 +141,8 @@ def cards():
         allCards[j] = upload
 
 
-<<<<<<< HEAD
-def open_cards(keys_list):
-=======
 # a method to create and display the cards
-def open_cards(list_cards):
->>>>>>> 2529ce03c77460f7de51d7e47e15b6023de156e3
+def open_cards(keys_list):
     # Display all cards
     counter = 1
     x = 30
@@ -191,6 +180,7 @@ def display_sorted(main_bin):
         y += 80
         cards_counter += 1
 
+
 # a method to display the cards at the start of the program.
 def cards_layout(dictKeys):
     xPosition = 30
@@ -206,6 +196,7 @@ def cards_layout(dictKeys):
         xPosition += 65
     root.after(3000, lambda: canvas.delete("all"))
     root.after(3000, lambda: open_cards(keys))
+
 
 # creating canvas
 root = Tk()
