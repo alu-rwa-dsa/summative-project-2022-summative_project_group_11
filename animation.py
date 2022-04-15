@@ -7,9 +7,6 @@ from pythonds.basic.queue import Queue
 import math
 
 
-delete_img = []
-
-
 def iteration_cards(cards):
     delete_img = []
     counter = 1
@@ -67,11 +64,12 @@ def radix_sort(num_list, redix=10):
                 canvas.move(displayed_cards[moved_index], 1040, y)
             if digit == 9:
                 canvas.move(displayed_cards[moved_index], 1170, y)
-            time.sleep(1)
+            time.sleep(0.1)
             root.update()
             index += 1
 
         display_iteration = []
+
         for j in range(10):
             while not bins[j].isEmpty():
                 item1 = bins[j].dequeue()
@@ -99,7 +97,7 @@ def radix_sort(num_list, redix=10):
                     canvas.move(displayed_cards[moved_index1], -1040, -y)
                 if j == 9:
                     canvas.move(displayed_cards[moved_index1], -1170, -y)
-                time.sleep(1)
+                time.sleep(0.1)
                 root.update()
 
         iteration_cards(display_iteration)
@@ -129,26 +127,24 @@ def cards():
         allCards[j] = upload
 
 
-def open_cards(list_cards):
+def open_cards(keys_list):
     # Display all cards
     counter = 1
     x = 30
     y = 20
-    for key in keys:
+    for key in keys_list:
         img = canvas.create_image(x, y, image=allCards[key], anchor=NW)
         displayed_cards.append(img)
         counter += 1
 
     # Display bin labels
     x_position = 30
-    x_prime = 50
     for i in range(0, 10):
         canvas.create_text(x_position, 700, text="bin" + str(i), fill="black", font='Helvetica 15 bold', anchor=SW)
         x_position += 130
-        x_prime += 130
 
     # calling radix sort function
-    deck2 = [int(i) for i in keys]
+    deck2 = [int(i) for i in keys_list]
     main_bin = radix_sort(deck2)
     display_sorted(main_bin)
 
@@ -196,10 +192,6 @@ allCards = {}
 displayed_cards = []
 delete_list = []
 
-x_card_size = 50
-y_card_size = 65
-suits = range(1, 5)
-values = range(1, 14)
 cards()
 
 keys = list(allCards.keys())
