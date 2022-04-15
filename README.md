@@ -12,8 +12,42 @@ Jessie UMUHIRE UMUTESI
 
 Evelyne UMUBYEYI
 
-## Project description
+
+
+
+## Solution:
+
+Problem statement:
+
 Sorting algorithms are categorized into comparison-based sorting algorithms and non-comparison-based sorting algorithms.  While comparison-based sorting algorithms are very reliable as they can be used to sort any object since they provide a comparator to define the order, they are slower for sorting large lists, as they have to compare individual elements of the list to come up with a sorted list. For this reason, there is a need for non-comparison-based sorting techniques with a better time-complexity of O(n) compared to comparison-based sorting algorithms with a lower limit of O(n log(n)).
+
+The comparison-based sorting algorithms have O(n log n) or O(n2), and the lower bound of the comparison-based algorithm is Ω(nlogn). This is because any comparison-based sorting algorithm makes at least nlog2 n comparisons to sort the input array as proven by Ford and Johnson using a decision tree diagram. 
+
+These comparison-based sorting algorithms can’t do better than nlogn time complexity. The more efficient sorting is counting sort which is a linear time non-comparison-based sorting algorithm that sorts in O(n+k) time when elements are in the range from 1 to k. (n is the number of items in the original array and k is the range of numbers we could have for every item in the array). Counting sort becomes linear sorting, which is better than comparison-based sorting algorithms that have O(nlogn) time complexity. But when elements are in range 1 to n2, counting sort has O(n2) which is worse than comparison-based sorting algorithms. That’s where the Radix sort comes in as a solution.
+
+The idea of the Radix sort is to extend the counting sort algorithm to get a better time-complexity when k goes n2. The radix sort algorithm does digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort because counting sort is a stable sort. 
+
+
+The project objectives and contribution :
+
+1.Implementing the radix sorting algorithm to get a better time complexity than the counting sort algorithm.
+
+2.Visualize the background operation of the radix sorting to raise awareness and gain better understanding of what is happening in the program's backend. 
+
+3.Building a backend program for online card games such as solitaire that require sorting cards. This program can be applied in giving hints to players while playing.
+
+4. Apply a sorting technique that removes comparison operations.
+
+
+Beneficiaries:
+
+1. Online card games can integrate the code to their systems.
+2. The program can be used by schools to facilitate teaching of radix sorting
+3. General public that wishes to gain insights into the working of radix sort.
+
+
+
+## Project description
 
 In this project, we have implemented the radix sorting algorithm, which is a non-comparison-based sorting algorithm for sorting a deck of shuffled playing cards with some animations to help the user understand the technique works in a more engaging way. Radix sort sorts the elements by first grouping the individual digits of the same place value. Then, sort the elements according to their increasing/decreasing order.
 
