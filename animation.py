@@ -143,25 +143,28 @@ def cards():
 
 # a method to create and display the cards
 def open_cards(keys_list):
-    # Display all cards
-    counter = 1
-    x = 30
-    y = 20
-    for key in keys_list:
-        img = canvas.create_image(x, y, image=allCards[key], anchor=NW)
-        displayed_cards.append(img)
-        counter += 1
+    try:
+        # Display all cards
+        counter = 1
+        x = 30
+        y = 20
+        for key in keys_list:
+            img = canvas.create_image(x, y, image=allCards[key], anchor=NW)
+            displayed_cards.append(img)
+            counter += 1
 
-    # Display bin labels
-    x_position = 30
-    for i in range(0, 10):
-        canvas.create_text(x_position, 700, text="bin" + str(i), fill="black", font='Helvetica 15 bold', anchor=SW)
-        x_position += 130
+        # Display bin labels
+        x_position = 30
+        for i in range(0, 10):
+            canvas.create_text(x_position, 700, text="bin" + str(i), fill="black", font='Helvetica 15 bold', anchor=SW)
+            x_position += 130
 
-    # calling radix sort function
-    deck2 = [int(i) for i in keys_list]
-    main_bin = radix_sort(deck2)
-    display_sorted(main_bin)
+        # calling radix sort function
+        deck2 = [int(i) for i in keys_list]
+        main_bin = radix_sort(deck2)
+        display_sorted(main_bin)
+    except TclError:
+        print("\nPlease rerun the program to visualize the sorting of cards")
 
 
 # a method to display the sorted cards
