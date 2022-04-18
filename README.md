@@ -139,3 +139,5 @@ O(11n) + O(1)+O(7)+O(6n)+O(2n^2)+O(n)
 # Link to program analysis video: 
 https://drive.google.com/file/d/12m6UeVOdp4gjbA6B4RGiDhiitcSyPp4Y/view?usp=sharing
 
+If interested in watching us use the same algorithm to sort a real deck of cards using the same algorithm, use this link [here](https://www.youtube.com/watch?v=y-OnYkESomk)
+
